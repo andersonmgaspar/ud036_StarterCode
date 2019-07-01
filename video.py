@@ -1,3 +1,4 @@
+# A class to test inheritance
 class Video():
 
     def __init__(self, video_title, video_duration):

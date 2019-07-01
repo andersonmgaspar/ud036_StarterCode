@@ -2,7 +2,7 @@ import webbrowser
 from video import Video
 
 class Movie(Video):
-
+    # Using the inheritance constructor for learning purpose
     def __init__(self, movie_title, movie_duration, movie_storyline, poster_image, trailer_youtube):
         Video.__init__(self, movie_title, movie_duration )
         self.storyline = movie_storyline
