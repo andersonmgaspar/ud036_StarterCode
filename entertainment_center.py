@@ -38,12 +38,11 @@ def get_trailer_url(title):
 
 
 # Creating a list of objects of Movie class
-get_movie_info("Arrival")
-get_movie_info("Interstellar")
-get_movie_info("A Separation")
-get_movie_info("Waking Life")
-get_movie_info("The Dark Knight")
-get_movie_info("Dr. Strangelove")
+movies_names = ["Arrival", "Interstellar", "A Separation", "Waking Life"]
+movies_names.extend(["The Dark Knight", "Dr. Strangelove"])
+for i in movies_names:
+    print(i)
+    get_movie_info(i)
 
 # Generating the HTML file with the list of movies objects
 fresh_tomatoes.open_movies_page(movies)
